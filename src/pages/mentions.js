@@ -1,9 +1,9 @@
 import React from "react";
-import Navigation from "../components/navigation";
+import LegalMention from "../components/mentions";
 
 const Mentions = () => {
     return (
-        <Navigation />
+        <LegalMention />
     );
 
 };

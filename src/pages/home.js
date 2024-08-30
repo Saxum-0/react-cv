@@ -1,10 +1,11 @@
 import React from "react";
-import Navigation from "../components/navigation";
+import About from '../components/about'
 
 const Home = () => {
     return (
-        <Navigation />
-        
+    
+    <About />
+    
     );
 
 };

@@ -1,9 +1,9 @@
 import React from "react";
-import Navigation from "../components/navigation";
+import Form from '../components/contact'
 
 const Contact = () => {
     return (
-        <Navigation />
+        <Form />
     );
 
 };

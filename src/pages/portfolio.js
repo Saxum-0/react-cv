@@ -1,9 +1,9 @@
 import React from "react";
-import Navigation from "../components/navigation";
+import Realisations from "../components/portfolio";
 
 const Portfolio = () => {
     return (
-        <Navigation />
+        <Realisations />
     );
 
 };

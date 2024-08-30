@@ -1,10 +1,9 @@
 import React from "react";
-import Navigation from "../components/navigation";
+import ServiceContain from "../components/offres";
 
 const Services = () => {
     return (
-        <Navigation />
-    );
-
+        <ServiceContain/>
+    )
 };
 export default Services;

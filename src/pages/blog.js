@@ -1,9 +1,9 @@
 import React from "react";
-import Navigation from "../components/navigation";
+import Blogs from '../components/articles'
 
 const Blog = () => {
     return (
-        <Navigation />
+        <Blogs />
     );
 
 };
