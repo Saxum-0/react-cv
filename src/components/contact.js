@@ -2,20 +2,20 @@ import React from "react";
 
 function Form() {
     return (
-        <div className="contact-background">
-            <div className="contact-content">
+        <div className="bg-img-contact">
+            <div className="formulaire">
                 <h2>ME CONTACTER</h2>
                 <p>
                     Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.
                 </p>
-                <hr />
-                <div className="row justify-content-center">
+                <div className="line"></div>
+                <div className="container row justify-content-center">
                     <div className="col-md-6 contact-form">
                         <h3>Formulaire de Contact</h3>
-                        <hr />
+                        <hr className="line"/>
                         <form>
                             <div className="form-group">
-                                <label htmlFor="nom">Votre Nom :</label>
+                                <label htmlFor="nom">Votre nom :</label>
                                 <input type="text" className="form-control" id="nom" name="nom" />
                             </div>
                             <div className="form-group">
@@ -27,19 +27,19 @@ function Form() {
                                 <input type="tel" className="form-control" id="tel" name="tel" />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="sujet">Le sujet :</label>
+                                <label htmlFor="sujet">Sujet :</label>
                                 <input type="text" className="form-control" id="sujet" name="sujet" />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="txt">Message :</label>
+                                <label htmlFor="txt">Votre Message :</label>
                                 <textarea className="form-control" id="txt" name="txt" rows="4"></textarea>
                             </div>
-                            <button type="submit">Envoyer</button>
+                            <button className="btn btn-primary" type="submit">Envoyer</button>
                         </form>
                     </div>
                     <div className="col-md-6 contact-info">
                         <h3>Mes coordonnées</h3>
-                        <hr />
+                        <hr className="line"/>
                         <address>
                             40 Rue Laure Diebold, 69009 Lyon, France <br />
                             06 20 30 40 50

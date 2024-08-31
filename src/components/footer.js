@@ -4,11 +4,12 @@ import { NavLink } from "react-router-dom";
 
   function Footer() {
     return (
-        <div className="p">
-            <div className="containeur">
-                <div className="row justify-content-center footer1">
-                    <div className="col-md-6 col-lg-3 mb-5">
-                        <h2>John Doe</h2>
+        <div>
+            <hr></hr>
+            <div className="contfoot">
+                <div className="row justify-content-center adress">
+                    <div className="links col-md-6 col-lg-3 mb-5">
+                        <h5>John Doe</h5>
                         <span>
                             40 Rue Laure Diebold <br />
                             69009 Lyon, France<br />
@@ -16,24 +17,24 @@ import { NavLink } from "react-router-dom";
                         </span>
                     </div>
                     <div className="col-md-6 col-lg-3 mb-5">
-                        <h3>Liens utiles</h3>
+                        <h6>Liens utiles</h6>
                         <ul className="navbar--link">
-        <NavLink exact to="/">
+        <NavLink to="/">
         <li className="navbar--link-item">Home</li>
         </NavLink>
-        <NavLink exact to="/blog">
+        <NavLink to="/blog">
         <li className="navbar--link-item">Blog</li>
         </NavLink>
-        <NavLink exact to="/services">
+        <NavLink to="/services">
         <li className="navbar--link-item">Services</li>
         </NavLink>
-        <NavLink exact to="/portfolio">
+        <NavLink to="/portfolio">
         <li className="navbar--link-item">Réalisations</li>
         </NavLink>
-        <NavLink exact to="/contact">
+        <NavLink to="/contact">
         <li className="navbar--link-item">Contact</li>
         </NavLink>
-        <NavLink exact to="/mentions">
+        <NavLink to="/mentions">
         <li className="navbar--link-item">Mentions</li>
         </NavLink>
       </ul>
@@ -55,7 +56,7 @@ import { NavLink } from "react-router-dom";
                         </ul>
                     </div>
                 </div>
-                <div className="credits">
+                <div className="credit">
                     <p>Designed by John Doe</p>
                 </div>
             </div>
