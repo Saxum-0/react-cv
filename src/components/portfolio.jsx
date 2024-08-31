@@ -19,12 +19,13 @@ function Realisation(props) {
 
 export default function realisations() {
     return (
+
         <>
-            <picture>
-                <source media="(min-width: 1024px)" srcSet="/img/banner.jpg" />
-                <source media="(min-width: 768px)" srcSet="/img/banner-tablette.jpg" />
-                <source media="(max-width: 767px)" srcSet="/img/banner-mobile.jpg" />
-                <img src="src\assets\img\banner.jpg" className="img-banner" />
+        <picture className="banner">
+                <source media="(min-width: 990px)" srcSet="/img/banner.jpg" />
+                <source media="(min-width: 702px)" srcSet="/img/banner-tablette.jpg" />
+                <source media="(max-width: 701px)" srcSet="/img/banner-mobile.jpg" />
+                <img src="/img/banner.jpg" className="banner" />
             </picture>
             <div className="container text-center portfoliotitre">
                 

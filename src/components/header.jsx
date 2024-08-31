@@ -1,30 +1,47 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+
 
 
 function Header () {
+    const [showLinks, setShowLinks] = useState(false)
+
+    const handleShowLinks = () => {
+        setShowLinks(!showLinks)
+    }
     return (
-        <div className="navbar navbar-expand-lg bg-dark sticky-top">
-            <div className="container-fluid ms-4">
+        <div className="bg-dark sticky-top">
+            <nav className={`navbar ${showLinks ? "shownav" : "hide-nav" } `}>
+            
                 <a href='/' className="navbar-brand text-light">
                     JOHN DOE
                 </a>
-            </div>
-            <nav className="navbar--link navbar me-5 col-md-4">
-                <Link to="/" className="text-light text-decoration-none">Accueil
-                </Link>
-                <Link to="/services" className="text-light text-decoration-none">Services</Link>
-                <Link exact to="/portfolio" className="text-light text-decoration-none">
-                Réalisations
-                </Link>
-                <Link exact to="/blog" className="text-light text-decoration-none">
-                Blog
-                </Link>
-                <Link exact to="/contact" className="text-light text-decoration-none">
-               contacter
-                </Link>
+            
+                <ul className="navbar__links">
+                <li><a href="/" className="text-light text-decoration-none navbar__link">
+                ACCUEIL
+                </a></li>
+                <li><a href="/services" className="text-light text-decoration-none navbar__link">
+                SERVICES
+                </a></li>
+                <li><a href="/portfolio" className="text-light text-decoration-none navbar__link">
+                REALISATIONS
+                </a></li>
+                <li><a href="/blog" className="text-light text-decoration-none navbar__link">
+                BLOG
+                </a></li>
+                <li><a href="/contact" className="text-light text-decoration-none navbar__link">
+                ME CONTACTER
+                </a></li>
+                </ul>
+                <button className="navbar-burger btn btn-link" onClick={handleShowLinks}>
+                    <span className="burger_bar"></span>
+                </button>
+
+                
             </nav>
-        </div>
+            
+            </div>
     );
 }
 export default Header;

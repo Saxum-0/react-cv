@@ -15,6 +15,11 @@ import { NavLink } from "react-router-dom";
                             69009 Lyon, France<br />
                             Téléphone : 06 20 30 40 50
                         </span>
+                        <div className="social">
+                            <a href=""><img src="/img/logo/square-twitter-brands-solid.svg"/></a>
+                            <a href=""><img src="/img/logo/square-github-brands-solid.svg"/></a>
+                            <a href=""><img src="/img/logo/linkedin-brands-solid.svg"/></a>
+                        </div>
                     </div>
                     <div className="col-md-6 col-lg-3 mb-5">
                         <h6>Liens utiles</h6>

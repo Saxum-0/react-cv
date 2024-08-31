@@ -1,3 +1,49 @@
+
+
+
+/* header */
+.navbar-brand {
+    margin-left: 30px;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    display: flex;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    min-height: 75px;
+    padding: 1rem;
+    color: #e7e7e7;
+}
+.navbar__links {
+    display: flex;
+    
+}
+.navbar__link {
+    padding: 0 0.3rem;
+    color: inherit;
+}
+.navbar__link:hover {
+    background-color: #cde1f8;
+}
+
+
 .image {
     background-image: url(/public/img/hero-bg.jpg);
     background-size: cover;
@@ -67,6 +113,19 @@
 
 }
 /*Footer*/
+.social {
+    display: block;
+    flex-direction: wrap;
+    margin: 0;
+    width: 120px; 
+    height: 100px;
+    justify-content: space-between;
+}
+.social img {
+    width: 30px;
+    margin: 5px;
+
+}
 
 .credit {
     background-color: #444;
@@ -150,6 +209,10 @@
     align-items: center;
 }
 /* services */
+.banner {
+    width: 100%;
+}
+
 .servicetitre {
     display: flex;
     flex-direction: column;
@@ -190,3 +253,85 @@
         background-image: url(/public/img/hero-bg-mobile.jpg);
 }
 }
+.icone:hover {
+    color: #cde1f8;
+}
+.navbar-burger {
+    display: none !important;
+    
+}
+@media screen and (max-width:900px) {
+    .navbar__links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: -100vw;
+        bottom: 0;
+        height: 100vh;
+        padding: 2rem;
+        background-color: #444;
+        visibility: hidden;
+    }
+    .shownav .navbar__links {
+        width: 80vw;
+        right: 20vh;
+        visibility: visible;
+        margin-top: 30px;
+        border-radius: 20px;
+        
+    }
+
+    .navbar__link {
+        display: block;
+        padding: 1.5rem;
+        font-size: 5vw;
+    }
+    .navbar-burger {
+        display: block !important;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+    }
+    .navbar-burger:hover {
+        cursor: pointer;
+    }
+    
+    .burger_bar,
+    .burger_bar::after,
+    .burger_bar::before {
+        display: block;
+        width: 30px;
+        height: 2.5px;
+        position: relative;
+        border-radius: 3px;
+        background-color: white;
+        transition: all .5s ease-in-out;
+        
+
+    }
+    .burger_bar::after,
+    .burger_bar::before {
+        content:"";
+        position: absolute;
+        left:0;
+        }
+    .burger_bar::after {
+        transform: translateY(-12px);
+
+    }
+    .burger_bar::before {
+        transform: translateY(12px);
+ 
+   }   
+   .shownav .burger_bar {
+    background: transparent;
+   }
+   .shownav .burger_bar::after {
+    transform: rotate(-45deg);
+   }
+   .shownav .burger_bar::before {
+        transform: rotate(45deg);
+   }
+}
+    
