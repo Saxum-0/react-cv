@@ -6,7 +6,7 @@ function Header () {
     return (
         <div className="navbar navbar-expand-lg bg-dark sticky-top">
             <div className="container-fluid ms-4">
-                <a className="navbar-brand text-light">
+                <a href='/' className="navbar-brand text-light">
                     JOHN DOE
                 </a>
             </div>

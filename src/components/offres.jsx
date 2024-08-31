@@ -1,24 +1,31 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
+
+
 
 function Service(props) {
     return (
         <div className="offre col-md-6 col-lg-4 mb-5">
             <div className="icone">
-                <img src={props.img} alt="" className="img-fluid" />
+                <img src={props.imgb} alt="" className="img-fluid"/>
                 <h3>{props.titre}</h3>
                 <p>{props.resumer}</p>
             </div>
         </div>
+   
     );
 }
+
+
+
 
 export default function ServiceContain() {
     return (
         <>
             <picture>
                 <source media="(min-width: 1024px)" srcSet="/img/banner.jpg" />
-                <source media="(min-width: 768px)" srcSet="/img/banner-tablette.jpg" />
-                <source media="(max-width: 767px)" srcSet="/img/banner-mobile.jpg" />
+                <source media="(min-width: 901px)" srcSet="/img/banner-tablette.jpg" />
+                <source media="(max-width: 900px)" srcSet="/img/banner-mobile.jpg" />
                 <img src="src/img/banner.jpg" className="img-banner" />
             </picture>
             <div className="container">
@@ -32,16 +39,19 @@ export default function ServiceContain() {
                         img="/img/logo/conception-ux.png"
                         titre="UX DESIGN"
                         resumer="L'UX Design est une méthode de conception centrée sur l'utilisateur. Son but est d'offrir une expérience de navigation optimale à l'internaute."
+                        imgb='public/img/logo/conception-ux2.png' 
                     />
-                    <Service
+                    <Service className="dw"
                         img="/img/logo/developpeur.png"
                         titre="DÉVELOPPEMENT WEB"
                         resumer="Le développement de sites web repose sur l'utilisation des langages HTML, CSS, JavaScript et PHP."
+                        imgb='public/img/logo/developpeur2.png'                  
                     />
-                    <Service
+                    <Service className="seo"
                         img="/img/logo/seo.png"
                         titre="RÉFÉRENCEMENT"
                         resumer="Le référencement naturel d'un site, aussi appelé SEO, consiste à mettre en œuvre des techniques pour améliorer sa position dans les résultats des moteurs de recherche."
+                        imgb="public/img/logo/seo2.png"
                     />
                 </div>
             </div>

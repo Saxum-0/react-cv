@@ -2,21 +2,21 @@ import * as React from "react";
 import '../components/components.css'
 
 const About = () => {
-  const SkillBar = ({ name, level, color }) => (
+  const SkillBar = ({ language, purcent, color }) => (
     <div className="skill">
-      <p>{name} {level}%</p>
+      <p>{language} {purcent}%</p>
       <div className="language">
-        <div className="level" style={{ width: `${level}%`, backgroundColor: color }}></div>
+        <div className="level" style={{ width: `${purcent}%`, backgroundColor: color }}></div>
       </div>
     </div>
   );
 
   return (
    <div className="conteneur">
-     <div className="image col-md-12"> 
+    <div className="image col-md-12"> 
     <h1 className="text-light">Bonjour, Je suis John Doe</h1>
-       <h2 className="text-light">Développeur web full stack</h2>
-      <button className="btn btn-primary">En Savoir plus</button>
+    <h2 className="text-light">Développeur web full stack</h2>
+    <button className="btn btn-primary">En Savoir plus</button>
     </div>
       <div className="container">
         <div className="shadow row">
@@ -34,24 +34,24 @@ const About = () => {
               <h3>Mes compétences</h3>
               <ul className="skills-list">
                 <li>
-                  <SkillBar name="HTML" level={90} color="#e34f26" />
+                  <SkillBar language="HTML" purcent={90} color="#e34f26" />
                 </li>
                 <li>
-                  <SkillBar name="CSS" level={80} color="#61dafb" />
+                  <SkillBar language="CSS" purcent={80} color="#61dafb" />
                 </li>
                 <li>
-                  <SkillBar name="JavaScript" level={70} color="#f7df1e" />
+                  <SkillBar language="JavaScript" purcent={70} color="#f7df1e" />
                 </li>
                 <li>
-                  <SkillBar name="PHP" level={60} color="#008000" />
+                  <SkillBar language="PHP" purcent={60} color="#008000" />
                 </li>
                 <li>
-                  <SkillBar name="React" level={50} color="#264de4" />
+                  <SkillBar language="React" purcent={50} color="#264de4" />
                 </li>
               </ul>
-            </div>
-        </div>
-      </div>
+    </div> 
+    </div>
+    </div>
     </div>
   );
 };

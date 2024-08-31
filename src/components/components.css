@@ -136,7 +136,7 @@
     background-color: white;
     margin-top: 20px;
     border-radius: 20px;
-    display: block;
+    display: flex;
     justify-content: center;
     flex-direction: column;
 }
@@ -165,7 +165,7 @@
 }
 .icone img{
     width: 150px;
-    height: 150px;   
+    height: 150px;  
 }
 /* mention L */
 .mentionstitre {
@@ -176,4 +176,17 @@
 }
 .accordion {
     width: 80%;
+}
+
+/* responsive */
+
+@media (max-width: 999px) and (min-width: 701) {
+    .image {
+        background-image: url(/public/img/hero-bg-tablette.jpg);
+}
+}
+@media (max-width: 700px) {
+    .image {
+        background-image: url(/public/img/hero-bg-mobile.jpg);
+}
 }
